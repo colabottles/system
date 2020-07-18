@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Design System</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="light dark">
+  <header>
+    <h1 class="logo">Logo</h1>
+
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Photos</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="layout" role="main">
+  
+  <h1>This Is A Heading!</h1>
+
+  <p>Yes, Yes, without the oops! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, <a href="#">dump toxic waste</a>, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>
+
+  <h2>This Is Another Heading!</h2>
+  <p>We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, <a href="#">they won't want it anymore!</a> You know what? It is beets. I've crashed into a beet truck. Must go faster... go, go, go, go, go!</p>
+
+  <h3>Importance!</h3>
+  <h4>Origin!</h4>
+  <h5>Specificity!</h5>
+  <h6>Position!</h6>
+
+  <hr />
+
+  <p>Must go faster... go, go, go, go, go! Do you have any idea how long it takes those cups to
+  decompose. Life finds a way. I was part of something special. This thing comes fully loaded. AM/FM radio, <a href="#">reclining bucket seats, and... power windows.</a> God help us, we're in the hands of engineers.</p>
+
+  <hr />
+  
+  <blockquote>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Did he just throw my cat out of the window? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Yeah, but <a href="#">your scientists were so preoccupied</a> with whether or not they could, they didn't stop to think if they should.</blockquote>
+  
+  <q>We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! You really think you can fly that thing? You really think you can fly that thing? God creates dinosaurs. God destroys dinosaurs. God creates Man. <a href="#">Man destroys God</a>. Man creates Dinosaurs.</q>
+
+  <ul>
+    <li>Lobster Rolls</li>
+    <li>Burritos</li>
+    <li>Sushi &amp; Ramen</li>  
+    <li>BBQ</li>
+  </ul>
+  <ol>
+    <li>Bruins</li>
+    <li>Celtics</li>
+    <li>Patriots</li>
+    <li>Red Sox</li>
+  </ol>
+  <small>This is small text using the small tag.</small>
+
+  <div class="grid-cards">
+    <p>Doggo ipsum long woofer stop it fren long woofer puggo I am bekom fat wrinkler shoober, puggo extremely cuuuuuute aqua doggo long water shoob many pats. Doing me a frighten you are doing me the shock noodle horse wow such tempt ruff, long bois blop extremely cuuuuuute. Very taste wow big ol ruff <a href="#">shoober doggorino</a>, very hand that feed shibe fat boi. Mlem dat tungg tho such treat waggy wags long bois, heckin good boys long bois ruff. Vvv super chub big ol pupper smol borking doggo with a long snoot for pats shibe mlem, heckin good boys and girls <a href="#">waggy wags boofers borkdrive</a>. Snoot he made many woofs stop it fren very good spot wrinkler porgo heck clouds, the neighborhood pupper very jealous pupper long woofer noodle horse snoot.</p>
+    
+    <p>Shoober maximum borkdrive long doggo clouds fat boi, long bois puggo puggorino. Noodle horse long water shoob woofer dat tungg tho vvv, <a href="#">shoober doggorino</a> long water shoob much ruin diet. You are doing me the shock you are doing me a frighten lotsa pats big ol pupper such treat, adorable doggo maximum borkdrive. Extremely cuuuuuute he made many woofs borking doggo, you are doing me a frighten. Heckin good boys and girls ur givin me a spook borking doggo borkdrive long water shoob heckin angery woofer wrinkler very taste wow wow such tempt, adorable doggo doing me a frighten thicc bork <a href="#">shoober doggorino</a> maximum borkdrive. Smol borking doggo with a long snoot for pats heck shoob vvv shooberino heck, heckin angery woofer snoot blep. Shibe porgo doggo shibe wow very biscit shoober mlem thicc, corgo the neighborhood pupper shooberino you are doin me a concern wow such tempt. Very hand that feed <a href="#">shoober doggorino</a> h*ck noodle horse clouds heckin angery woofer, big ol pupper shooberino heckin good boys and girls. Yapper tungg very taste wow thicc, you are doing me a frighten.</p>
+  </div>
+  
+  <pre>
+    <code>
+      import React, { useRef } from 'react';
+      import { useBodyScrollLock } from './hooks/bodyScrollLock';
+      import { useOnClickOutside } from './hooks/useOnClickOutside';
+      
+      const DishForm = ({setToggle}) => {
+      const ref = useRef();
+      
+      useOnClickOutside(ref, setToggle);
+      
+      useBodyScrollLock();
+
+      return (
+      &lt;div className="dish-card" ref={ref}&gt;
+        &lt;form&gt;
+          &lt;div className="form-row"&gt;
+            &lt;label htmlFor="name"&gt;Name: &lt;/label&gt;
+            &lt;input type="text" id="name" /&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+      );
+
+      };
+      
+      export default DishForm;
+    </code>
+  </pre>
+  
+  <form>
+    <div class="form-grid">
+      <div><label for="text">Text</label><input id="text" type="text" /></div>
+      <div><label for="number">Number</label><input id="number" type="number" /></div>
+      <div><label for="textarea">Textarea</label><textarea id="textarea" type="textarea"></textarea>
+    </div>
+    <fieldset class="fieldset">
+      <legend class="sr-only">Historical Figures</legend>
+        <div class="form-checkbox">
+          <input class="form-checkbox__input" id="truth" type="checkbox" name="historical-figures"
+            value="truth" checked>
+          <label class="form-checkbox__label" for="truth">Sojourner Truth</label>
+        </div>
+        <div class="form-checkbox">
+          <input class="form-checkbox__input" id="douglass" type="checkbox" name="historical-figures"
+            value="douglass">
+          <label class="form-checkbox__label" for="douglass">Frederick Douglass</label>
+        </div>
+        <div class="form-checkbox">
+          <input class="form-checkbox__input" id="washington" type="checkbox" name="historical-figures"
+            value="washington">
+          <label class="form-checkbox__label" for="washington">Booker T. Washington</label>
+        </div>
+        <div class="form-checkbox">
+          <input class="form-checkbox__input" id="carver" type="checkbox" name="historical-figures"
+            disabled>
+          <label class="form-checkbox__label" for="carver">George Washington Carver</label>
+        </div>
+    </fieldset>
+    <fieldset class="form-fieldset">
+      <legend class="sr-only">Historical Figures</legend>
+      <div class="form-radio">
+        <input class="form-radio__input" id="stanton" type="radio" checked name="historical-figures-2"
+          value="stanton">
+        <label class="form-radio__label" for="stanton">Shirley Chisholm</label>
+      </div>
+      <div class="form-radio">
+        <input class="form-radio__input" id="anthony" type="radio" name="historical-figures-2"
+          value="anthony">
+        <label class="form-radio__label" for="anthony">Marsha P. Johnson</label>
+      </div>
+      <div class="form-radio">
+        <input class="form-radio__input" id="tubman" type="radio" name="historical-figures-2"
+          value="tubman">
+        <label class="form-radio__label" for="tubman">Harriet Tubman</label>
+      </div>
+    </fieldset>
+    <div>
+      <label for="select">Select</label>
+      <select id="select" type="text">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+        <option value="four">Four</option>
+        <option value="five">Five</option>
+      </select>
+    </div>
+  </form>
+
+  <div class="page-content">
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Scenic Shores</h2>
+        <p class="copy">See some of the most beautiful coastal terrain overlooking the Atlantic Ocean.</p>
+        <button class="btn">View Trips</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Camping Gems</h2>
+        <p class="copy">Plan your next adventure to these fabulous destinations.</p>
+        <button class="btn">View Trips</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Mountain Hikes</h2>
+        <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of the mountains.</p>
+        <button class="btn">Book Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Fantastic Finds</h2>
+        <p class="copy">Find hidden gems and classic destinations in your trip up the coast today.</p>
+        <button class="btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <form class="form-slider">
+    <label class="form-label" for="range-slider">Range slider</label>
+    <input id="range-slider" class="form-range" type="range" min="0" max="100" step="10" value="20">
+  </form>
+  
+  <form class="form-flex">
+    <button class="form-button form-button--normal">Default</button>
+    <button class="form-button form-button--hover">Hover</button>
+    <button class="form-button form-button--active">Active</button>
+    <button class="form-button form-button--focus">Focus</button>
+    <button class="form-button form-button--disabled">Disabled</button>
+    <button class="form-button form-button--unstyled">Unstyled</button>
+  </form>
+
+  </main>
+
+  <footer>
+    <h2 class="logo">Logo</h2>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Photos</a>
+      <a href="#">Contact</a>
+    </nav>
+    <p>&copy;2020 - Todd Libby - Because everyone needs a copyright on their footer.</p>
+  </footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
