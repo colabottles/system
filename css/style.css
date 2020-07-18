@@ -410,8 +410,8 @@ label {
 }
 
 button {
-  background-color: var(--midnight);
-  border: 1px solid var(--black);
+  background-color: var(--grey);
+  border: 1px solid var(--silver);
   color: var(--primaryButton);
   font-size: var(--smallText);
   margin: 0.25em;
