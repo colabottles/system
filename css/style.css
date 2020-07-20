@@ -304,7 +304,7 @@ li {
 }
 
 .card:nth-child(4):before {
-  background-image: url(https://images.unsplash.com/photo-1595093865398-fd0983bdf8e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80);
+  background-image: url(https://images.unsplash.com/photo-1595241384939-ec0228ff259f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
 }
 
 .content {
